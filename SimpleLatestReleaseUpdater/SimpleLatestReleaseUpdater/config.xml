@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <add key="Username" value="TalicZealot" />
+    <add key="Repository" value="SimpleLatestReleaseUpdater" />
+    <add key="UpdateNamePrefix" value="Update" />
+    <add key="InstallPath" value="../.." />
+    <add key="DownloadPath" value="./temp/update.zip" />
+  </appSettings>
+</configuration>

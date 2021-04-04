@@ -1,0 +1,28 @@
+﻿<Window x:Class="SimpleLatestReleaseUpdater.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleLatestReleaseUpdater" xmlns:models="clr-namespace:SimpleLatestReleaseUpdater.Models" d:DataContext="{d:DesignInstance Type=models:MainViewModel}"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        Title="Updater" Height="40" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,0" Loaded="Grid_Loaded">
+        <ProgressBar
+            Width="600"
+            Height="40"
+            Name="MainProgressBar"
+            Value="{Binding Progress, Mode=OneWay}"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"/>
+        <Label x:Name="label"
+               Content="{Binding Text}"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontWeight="Bold"
+               Foreground="#FF3C0042"
+               FontSize="16" />
+    </Grid>
+</Window>
